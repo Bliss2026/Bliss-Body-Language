@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Velora Color Palette</title>
+<style>
+body { font-family: Arial, sans-serif; background: #f7f7f7; padding: 30px; }
+h1 { text-align: center; margin-bottom: 30px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; }
+.card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+.color { height: 100px; }
+.info { padding: 10px; text-align: center; }
+.name { font-size: 14px; margin-bottom: 5px; }
+.code { font-size: 13px; cursor: pointer; background: #eee; padding: 5px; border-radius: 6px; }
+</style>
+</head>
+
+<body>
+<h1>Velora Palette</h1>
+
+<div class="grid">
+
+<!-- NÖTR -->
+<div class="card"><div class="color" style="background:#000000;"></div><div class="info"><div class="name">Black</div><div class="code" onclick="copy(this)">#000000</div></div></div>
+<div class="card"><div class="color" style="background:#3E3E3E;"></div><div class="info"><div class="name">Dark Grey</div><div class="code" onclick="copy(this)">#3E3E3E</div></div></div>
+<div class="card"><div class="color" style="background:#575757;"></div><div class="info"><div class="name">Grey</div><div class="code" onclick="copy(this)">#575757</div></div></div>
+<div class="card"><div class="color" style="background:#FFFFFF;"></div><div class="info"><div class="name">White</div><div class="code" onclick="copy(this)">#FFFFFF</div></div></div>
+
+<!-- SICAK RENKLER -->
+<div class="card"><div class="color" style="background:#BA0200;"></div><div class="info"><div class="name">Deep Red</div><div class="code" onclick="copy(this)">#BA0200</div></div></div>
+<div class="card"><div class="color" style="background:#800020;"></div><div class="info"><div class="name">Burgundy</div><div class="code" onclick="copy(this)">#800020</div></div></div>
+<div class="card"><div class="color" style="background:#E67E22;"></div><div class="info"><div class="name">Orange</div><div class="code" onclick="copy(this)">#E67E22</div></div></div>
+<div class="card"><div class="color" style="background:#F1C40F;"></div><div class="info"><div class="name">Sun Yellow</div><div class="code" onclick="copy(this)">#F1C40F</div></div></div>
+
+<!-- BEJ -->
+<div class="card"><div class="color" style="background:#F5E6D3;"></div><div class="info"><div class="name">Soft Beige</div><div class="code" onclick="copy(this)">#F5E6D3</div></div></div>
+<div class="card"><div class="color" style="background:#EAD7C3;"></div><div class="info"><div class="name">Warm Sand</div><div class="code" onclick="copy(this)">#EAD7C3</div></div></div>
+<div class="card"><div class="color" style="background:#CBB89D;"></div><div class="info"><div class="name">Nude Taupe</div><div class="code" onclick="copy(this)">#CBB89D</div></div></div>
+<div class="card"><div class="color" style="background:#FAD9C1;"></div><div class="info"><div class="name">Peach Pink</div><div class="code" onclick="copy(this)">#FAD9C1</div></div></div>
+
+<!-- MAVİ -->
+<div class="card"><div class="color" style="background:#2767AC;"></div><div class="info"><div class="name">Royal Blue</div><div class="code" onclick="copy(this)">#2767AC</div></div></div>
+<div class="card"><div class="color" style="background:#2980B9;"></div><div class="info"><div class="name">Ocean Blue</div><div class="code" onclick="copy(this)">#2980B9</div></div></div>
+<div class="card"><div class="color" style="background:#89CFF0;"></div><div class="info"><div class="name">Sky Blue</div><div class="code" onclick="copy(this)">#89CFF0</div></div></div>
+<div class="card"><div class="color" style="background:#BCD4E6;"></div><div class="info"><div class="name">Mist Blue</div><div class="code" onclick="copy(this)">#BCD4E6</div></div></div>
+
+<!-- MOR -->
+<div class="card"><div class="color" style="background:#8A79CC;"></div><div class="info"><div class="name">Lavender Purple</div><div class="code" onclick="copy(this)">#8A79CC</div></div></div>
+<div class="card"><div class="color" style="background:#C8B6E2;"></div><div class="info"><div class="name">Light Lilac</div><div class="code" onclick="copy(this)">#C8B6E2</div></div></div>
+
+<!-- PEMBE -->
+<div class="card"><div class="color" style="background:#F7B7C3;"></div><div class="info"><div class="name">Rose Pink</div><div class="code" onclick="copy(this)">#F7B7C3</div></div></div>
+<div class="card"><div class="color" style="background:#FDE2E4;"></div><div class="info"><div class="name">Baby Pink</div><div class="code" onclick="copy(this)">#FDE2E4</div></div></div>
+
+<!-- YEŞİL / TEAL -->
+<div class="card"><div class="color" style="background:#27AE60;"></div><div class="info"><div class="name">Emerald</div><div class="code" onclick="copy(this)">#27AE60</div></div></div>
+<div class="card"><div class="color" style="background:#55A481;"></div><div class="info"><div class="name">Soft Emerald</div><div class="code" onclick="copy(this)">#55A481</div></div></div>
+<div class="card"><div class="color" style="background:#8FD0D0;"></div><div class="info"><div class="name">Soft Aqua</div><div class="code" onclick="copy(this)">#8FD0D0</div></div></div>
+<div class="card"><div class="color" style="background:#598D8D;"></div><div class="info"><div class="name">Muted Teal</div><div class="code" onclick="copy(this)">#598D8D</div></div></div>
+
+</div>
+
+<script>
+function copy(el) {
+  navigator.clipboard.writeText(el.innerText);
+  alert("Kopyalandı: " + el.innerText);
+}
+</script>
+
+</body>
+</html>
